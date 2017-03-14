@@ -30,7 +30,7 @@
     if ([json isKindOfClass:[NSDictionary class]]) {
         NSMutableDictionary *params = [(NSDictionary *)json mutableCopy];
         [params addEntriesFromDictionary:self.extraParams];
-        for (NSString *delKey in @[@"url", @"methodType, extraParams"]) {
+        for (NSString *delKey in @[@"url", @"methodType", @"extraParams"]) {
             if ([params.allKeys containsObject:delKey]) {
                 [params removeObjectForKey:delKey];
             }
