@@ -15,6 +15,9 @@
 		565EA5001E77CA7C005B027D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565EA4FE1E77CA7C005B027D /* LaunchScreen.storyboard */; };
 		565EA50B1E77CA7C005B027D /* NETTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565EA50A1E77CA7C005B027D /* NETTests.m */; };
 		565EA5161E77CA7C005B027D /* NETUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565EA5151E77CA7C005B027D /* NETUITests.m */; };
+		565EA5251E77CD89005B027D /* CYBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 565EA5241E77CD89005B027D /* CYBaseRequest.m */; };
+		565EA5281E77CF40005B027D /* CYRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 565EA5271E77CF40005B027D /* CYRequestManager.m */; };
+		893A7E92216DA14502516803 /* libPods-NET.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA0696BA8DF601DA358F381 /* libPods-NET.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,14 @@
 		565EA5111E77CA7C005B027D /* NETUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NETUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565EA5151E77CA7C005B027D /* NETUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETUITests.m; sourceTree = "<group>"; };
 		565EA5171E77CA7C005B027D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565EA5231E77CD89005B027D /* CYBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseRequest.h; sourceTree = "<group>"; };
+		565EA5241E77CD89005B027D /* CYBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseRequest.m; sourceTree = "<group>"; };
+		565EA5261E77CF40005B027D /* CYRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRequestManager.h; sourceTree = "<group>"; };
+		565EA5271E77CF40005B027D /* CYRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRequestManager.m; sourceTree = "<group>"; };
+		565EA5291E77D40F005B027D /* CYRequestConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYRequestConstant.h; sourceTree = "<group>"; };
+		ABA0696BA8DF601DA358F381 /* libPods-NET.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NET.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBED63B88A7412AE9E0EC144 /* Pods-NET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NET.release.xcconfig"; path = "Pods/Target Support Files/Pods-NET/Pods-NET.release.xcconfig"; sourceTree = "<group>"; };
+		CCFFB5936563193E40C82E6D /* Pods-NET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NET.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NET/Pods-NET.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893A7E92216DA14502516803 /* libPods-NET.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D64DE6FB7CE72D32EEE7587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABA0696BA8DF601DA358F381 /* libPods-NET.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		565EA4E41E77CA7C005B027D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,8 @@
 				565EA5091E77CA7C005B027D /* NETTests */,
 				565EA5141E77CA7C005B027D /* NETUITests */,
 				565EA4EE1E77CA7C005B027D /* Products */,
+				9C5B378F7F43B359E7E26082 /* Pods */,
+				0D64DE6FB7CE72D32EEE7587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +127,11 @@
 				565EA4F41E77CA7C005B027D /* AppDelegate.m */,
 				565EA4F61E77CA7C005B027D /* ViewController.h */,
 				565EA4F71E77CA7C005B027D /* ViewController.m */,
+				565EA5231E77CD89005B027D /* CYBaseRequest.h */,
+				565EA5241E77CD89005B027D /* CYBaseRequest.m */,
+				565EA5261E77CF40005B027D /* CYRequestManager.h */,
+				565EA5271E77CF40005B027D /* CYRequestManager.m */,
+				565EA5291E77D40F005B027D /* CYRequestConstant.h */,
 				565EA4F91E77CA7C005B027D /* Main.storyboard */,
 				565EA4FC1E77CA7C005B027D /* Assets.xcassets */,
 				565EA4FE1E77CA7C005B027D /* LaunchScreen.storyboard */,
@@ -140,6 +167,15 @@
 			path = NETUITests;
 			sourceTree = "<group>";
 		};
+		9C5B378F7F43B359E7E26082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCFFB5936563193E40C82E6D /* Pods-NET.debug.xcconfig */,
+				CBED63B88A7412AE9E0EC144 /* Pods-NET.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 565EA51A1E77CA7C005B027D /* Build configuration list for PBXNativeTarget "NET" */;
 			buildPhases = (
+				EA9964CC629EBD95E3AF2E33 /* [CP] Check Pods Manifest.lock */,
 				565EA4E91E77CA7C005B027D /* Sources */,
 				565EA4EA1E77CA7C005B027D /* Frameworks */,
 				565EA4EB1E77CA7C005B027D /* Resources */,
+				A23DB344B8E90D3B2FB496F7 /* [CP] Embed Pods Frameworks */,
+				76C7D75039CB9B39B407F728 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,13 +307,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76C7D75039CB9B39B407F728 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NET/Pods-NET-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23DB344B8E90D3B2FB496F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NET/Pods-NET-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA9964CC629EBD95E3AF2E33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		565EA4E91E77CA7C005B027D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				565EA4F81E77CA7C005B027D /* ViewController.m in Sources */,
+				565EA5281E77CF40005B027D /* CYRequestManager.m in Sources */,
 				565EA4F51E77CA7C005B027D /* AppDelegate.m in Sources */,
+				565EA5251E77CD89005B027D /* CYBaseRequest.m in Sources */,
 				565EA4F21E77CA7C005B027D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +511,7 @@
 		};
 		565EA51B1E77CA7C005B027D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFFB5936563193E40C82E6D /* Pods-NET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NET/Info.plist;
@@ -433,6 +523,7 @@
 		};
 		565EA51C1E77CA7C005B027D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBED63B88A7412AE9E0EC144 /* Pods-NET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NET/Info.plist;
@@ -507,6 +598,7 @@
 				565EA51C1E77CA7C005B027D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		565EA51D1E77CA7C005B027D /* Build configuration list for PBXNativeTarget "NETTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +607,7 @@
 				565EA51F1E77CA7C005B027D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		565EA5201E77CA7C005B027D /* Build configuration list for PBXNativeTarget "NETUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +616,7 @@
 				565EA5221E77CA7C005B027D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

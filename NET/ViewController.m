@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CYBaseRequest.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    // 1. 创建请求
+    CYBaseRequest *request = [CYBaseRequest new];
+    request.url = @"www.baidu.com";
+    
+    // 2. 发送请求
+    [request sendRequestWithCompletionHandle:^(BOOL success, id response, NSString *message) {
+        
+    }];
 }
 
 
