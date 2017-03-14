@@ -1,1 +1,1 @@
-# CYBaseRequest
+AFNetWorking->CYRequestManager->CYBaseRequest
